@@ -155,7 +155,7 @@ return [
     |
     */
 
-    'providers' => ServiceProvider::defaultProviders()->merge([
+    'providers' => [
         /*
          * Package Service Providers...
          */
@@ -170,7 +170,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider::class,
         // 'Pusher' => Pusher\Pusher::class,
-    ])->toArray(),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -183,9 +183,9 @@ return [
     |
     */
 
-    'aliases' => Facade::defaultAliases()->merge([
+    'aliases' => [
         // 'Example' => App\Facades\Example::class,
         'Pusher' => Pusher\Pusher::class,
-    ])->toArray(),
+    ],
 
 ];
